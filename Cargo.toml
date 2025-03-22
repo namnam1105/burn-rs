@@ -1,5 +1,5 @@
 [package]
-name = "burn-rust"
+name = "burn-rs"
 version = "0.1.0"
 edition = "2024"
 license = "AGPL-3"
@@ -7,7 +7,14 @@ description = "a simple POSIX/UNIX cli tool to burn .iso images to a disk."
 
 [dependencies]
 clap = { version = "4.5.32", features = ["derive"] }
+exfat-fs = "0.1.0"
+fatfs = "0.3.6"
 gpt = "4.1.0"
+iso9660_simple = "0.1.10"
+libc = "0.2.171"
+mbrman = "0.5.4"
+sysinfo = "0.33.1"
+uuid = { version = "1.16.0", features = ["v4"] }
 
 [[bin]]
 name = "burn"
